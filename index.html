@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instant Excuse Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="icons/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="card">
+    <h1>Instant Excuse Generator</h1>
+    <p class="tagline">When reality needs a rewrite.</p>
+
+    <p class="premium-note">
+      Premium unlock: <strong>$0.99</strong> — unlimited excuses for life
+    </p>
+
+    <select id="category">
+      <option value="work">Work</option>
+      <option value="dating">Dating</option>
+      <option value="family">Family</option>
+      <option value="school">School</option>
+      <option value="funny">Funny</option>
+      <option value="custom">Custom (tell us what happened)</option>
+    </select>
+
+    <input
+      id="customInput"
+      type="text"
+      placeholder="Briefly describe what happened..."
+      style="display:none;"
+    />
+
+    <select id="style">
+      <option value="regretful">Regretful</option>
+      <option value="confident">Confident</option>
+      <option value="apologetic">Apologetic</option>
+    </select>
+
+    <button id="generateBtn">Get excuse</button>
+
+    <div id="output"></div>
+
+    <p id="limitText"></p>
+  </div>
+
+  <div class="premium-box">
+    <h2>Unlock Premium</h2>
+    <ul>
+      <li>✅ Unlimited excuses</li>
+      <li>✅ Style control</li>
+      <li>✅ 3 excuses per click</li>
+      <li>✅ Copy buttons</li>
+      <li><strong>$0.99 one-time</strong></li>
+    </ul>
+
+    <button id="unlockBtn">Unlock Now</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
